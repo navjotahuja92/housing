@@ -38,7 +38,9 @@
 				<div class="quote">{{ Inspiring::quote() }}</div>
 				<br/>
 				<br/>
-				<a class="waves-effect waves-light btn btn-large blue lighten-1" href="#"><i class="mdi-social-person-add left" id="fbLoginButton" ></i>LOGIN WITH FACEBOOK</a>
+				@if(!Auth::check())
+				<a class="waves-effect waves-light btn btn-large blue lighten-1" href="{{ route('user.facebook')}}"><i class="mdi-social-person-add left" id="fbLoginButton" ></i>LOGIN WITH FACEBOOK</a>
+				@endif
 			</div>
 		</div>
 @endsection

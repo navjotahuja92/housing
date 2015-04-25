@@ -3,7 +3,7 @@
 use App\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
-
+use Auth;
 class Registrar implements RegistrarContract {
 
 	/**
@@ -34,6 +34,20 @@ class Registrar implements RegistrarContract {
 			'email' => $data['email'],
 			'password' => bcrypt($data['password']),
 		]);
+	}
+
+	public function createWithFacebook($user)
+	{
+		if(!$user = User::where('email','=',$user->email)->first())
+		{
+			$user = User::create([
+				'name' => $user->name,
+				'email' => $user->email,
+				'tags' => serialize($user->user)
+	 		]);
+		}
+
+		Auth::login($user);
 	}
 
 }

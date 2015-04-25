@@ -1,4 +1,4 @@
-<footer class="blue darken-2 white-text">
+<footer class="purple darken-4 white-text">
     <div class="footer-copyright">
         <div class="row">
             <div class="col l9 m9 s12">© 2015 Housing, All rights reserved.</div>

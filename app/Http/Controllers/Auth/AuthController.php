@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Http\Request;
+use Socialize;
 class AuthController extends Controller {
 
 	/**
@@ -151,4 +152,24 @@ class AuthController extends Controller {
 		return property_exists($this, 'loginPath') ? $this->loginPath : '/auth/login';
 	}
 
+
+	public function facebook()
+	{
+		return Socialize::with('facebook')->redirect();
+	}
+
+	public function dataFromFacebook()
+	{
+		$user = Socialize::with('facebook')->user();
+
+
+		if($this->registrar->createWithFacebook($user))
+		{
+
+		}
+		else
+		{
+			return redirect(route('pages.home'));
+		}
+	}
 }

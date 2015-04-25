@@ -3,7 +3,7 @@
 <head>
     <title>
     @section('title')
-        Edcoogle - Education made easy.
+        Real Hack - Housing.
     @show
     </title>
 
@@ -17,9 +17,6 @@
     <div >
             @include('layouts.menu')
 
-              @if(Auth::check())
-                  @include('layouts.submenu')
-              @endif
             <div id="ed-content">
             @section('content')
                 This is master template. Parse content into it.
@@ -36,5 +33,22 @@
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('/js/materialize.js') }}"></script>
         <script src="{{ asset('js/base.js') }}"></script>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '823314961083541',
+              xfbml      : true,
+              version    : 'v2.3'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
     @show
 </html>
