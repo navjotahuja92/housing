@@ -1,21 +1,11 @@
-<html>
-	<head>
-		<title>Laravel</title>
-		
-		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+@extends('layouts.main')
 
+
+
+@section('style')
+
+@parent
 		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				width: 100%;
-				height: 100%;
-				color: #B0BEC5;
-				display: table;
-				font-weight: 100;
-				font-family: 'Lato';
-			}
-
 			.container {
 				text-align: center;
 				display: table-cell;
@@ -28,7 +18,7 @@
 			}
 
 			.title {
-				font-size: 96px;
+				font-size: 70px;
 				margin-bottom: 40px;
 			}
 
@@ -36,13 +26,19 @@
 				font-size: 24px;
 			}
 		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="content">
-				<div class="title">Laravel 5</div>
+@stop
+@section('content')
+	<video autoplay loop poster=" {{ asset('images/final_background.jpg') }}" id="bgvid">
+        <!-- <source src="longjourney.webm" type="video/webm"> -->
+        <source src="{{ asset('longjourney.mp4') }}" type="video/mp4">
+    </video>
+		<div class="row">
+			<div class="col offset-s3 s6">
+				<div class="title">Housing - Qucikly Find Houses</div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
+				<br/>
+				<br/>
+				<a class="waves-effect waves-light btn btn-large blue lighten-1" href="#"><i class="mdi-social-person-add left" id="fbLoginButton" ></i>LOGIN WITH FACEBOOK</a>
 			</div>
 		</div>
-	</body>
-</html>
+@endsection

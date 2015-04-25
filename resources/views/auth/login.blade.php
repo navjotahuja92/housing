@@ -1,11 +1,15 @@
-@extends('app')
+@extends('layouts.main')
 
 @section('content')
+<br/>
+<br/>
+<br/>
+<br/>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col l4 offset-l4">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
+				<h1 class="panel-heading">Login</h1>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -32,16 +36,6 @@
 							<label class="col-md-4 control-label">Password</label>
 							<div class="col-md-6">
 								<input type="password" class="form-control" name="password">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" name="remember"> Remember Me
-									</label>
-								</div>
 							</div>
 						</div>
 

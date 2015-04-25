@@ -1,0 +1,401 @@
+/*@font-face {
+  font-family: "billy";
+  src: url("../fonts/billy.ttf");
+}*/
+.btn, .btn-large{
+    background-color: black;
+}
+body{
+    width: 100%;
+    overflow-x: hidden; 
+    font-size: 16px !important;
+}
+.container{
+    width: 100%;
+    margin: 0em;
+    max-width: none;
+    padding: 0em;
+}
+nav{
+    width: 100%;
+    padding: 0em 0em;
+}
+blockquote
+{
+    border-left: 5px solid #455A64;
+}
+#ed-menu .nav-wrapper{
+   padding: 0em 2em;
+}
+#ed-submenu{
+    height: 47px;
+    line-height: 43px;
+}
+#ed-submenu *{
+    box-shadow: none;
+}
+#ed-submenu i{
+    line-height: 37px;
+}
+#search{
+    font-size: 1em;
+}
+#search:focus{
+    border: none !important;
+    -webkit-box-shadow:none !important;
+    box-shadow: none !important; 
+}
+#search:valid{
+    height: 1rem !important;
+    /*padding-left:5rem !important; */
+}
+.container .row{
+    margin: 0em;
+}
+#ed-content{
+    min-height: 515px;
+    font-size: 0.7em;
+}
+footer{
+    padding: 2em;
+}
+#saveClassProgress{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.handwriting
+{
+    /*font-family: Billy, Calibri, Trebuchet, sans-serif;*/
+}
+.text-shadow{
+    text-shadow:5px 5px 10px black;
+}
+.myanswer {
+    background: rgb(234, 234, 240);
+}
+video#bgvid {
+    position: absolute; right: 0; bottom: 0;
+    min-width: 100%; min-height: 80%;
+    width: auto; height: auto; z-index: -100;
+    background: no-repeat;
+    background-size: cover;
+}
+#homebanner{
+    /*background: url(../../images/final_background.jpg);*/
+    background-size: 100% 100%;
+    font-weight: 700;
+    text-align: center;
+    margin: 0em;
+    min-height: 600px;
+    background-color: rgba(0,0,0,0.25);
+}
+.hidden{
+    display: none;
+}
+.no-padding-col{
+    padding: 0px !important;
+}
+
+.home-card{
+    margin-top: -10%;
+}
+.tag a{
+    margin-top: 2%;
+}
+.center-align-1
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+}
+.pagination li.active
+{
+  background-color: #263238;  
+}
+#askMain
+{
+    text-align: center;
+    font-size: 2em;
+    color: white !important;
+    border-bottom: none;
+}
+
+#askMain:focus{
+    border-bottom: none !important;
+}
+#askMain::-webkit-input-placeholder
+{
+    color: white !important;
+}
+#summernote btn{
+    box-shadow: none;
+}
+#singupLoginPage{
+    background-image: url("../images/back1.jpeg");
+    height: 520px;
+}
+.question-card .card-panel{
+   font-size: 1.3em;
+   /*height: 250px;*/
+}
+
+.question-card img:not(.avatar),.question-card iframe
+{
+    max-width: 100%;
+}
+.btn.small{
+    padding: 0em 0.2em;
+    height: auto;
+    line-height: 30px;
+    margin: 0.1em; 
+}
+.question-card .btn{
+    padding: 0em 0.2em;
+    height: auto;
+    line-height: 30px;
+    margin: 0.1em;
+}
+.question-card .btn-floating{
+    margin-top: -2%;
+    width: 40px;
+    height: 40px;
+}
+
+.question-card .btn-floating i{
+    line-height: 38px;
+}
+
+#signupModal{
+    background-image: url("../images/back1.jpeg");
+}
+#askQuestionModal{
+    max-height: 90%;
+}
+nav ul a{
+    position: relative;
+}
+.avatar{
+    border-radius: 50%;
+}
+.avatar.small{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 0.2em 0.5em;
+}
+.left.floated{
+    float: left;
+}
+.avatar.in-menu{
+    width:42px;
+    height: 42px;
+    margin-top:0.5em;
+}
+
+nav ul a > .badge{
+     top: -17%;
+    right: -10%;
+    font-weight: 600;
+    color: white;
+}
+.tags i{
+    display: none;
+}
+.answer{
+    margin: 2em 0.5em;
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 1em;
+    border-top: 0.1em solid #E0D8D8;
+    margin-bottom: 3em;
+}
+#saveButton{
+    padding: 0.1em;
+}
+#saveButton i{
+    margin-right: 0.2em;
+}
+.answer img, .answer iframe
+{
+   max-width: 500px;
+}
+#notification-content{
+    width: 400px;
+    font-size: 2em;
+    display: none;
+}
+#profile-content{
+    width: 200px;
+    font-size: 1em;
+
+    display: none;
+    text-align: center;
+    margin: 0em;
+}
+#profile-content .card-content{
+padding: 0px !important;
+}
+#profile-content img{
+    width: 70%;
+    margin: 0% 10%;
+}
+.qtip{
+    max-width: 500px !important;
+    min-height: auto; 
+}
+.qtip-content{
+    padding: 0em !important;
+}
+
+ul[id^=homecard] li{
+    opacity: 0;
+}
+.z-depth-0{
+    box-shadow: none;
+}
+.dropdown-content li
+{
+    color: inherit;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    color: inherit;
+}
+#mainAskTextarea
+{
+    height: 6rem;
+}
+
+#menuPages li:hover
+{
+    background-color: grey;
+}
+/*--------------------
+    Bold Settings
+---------------------*/
+.more-bold-2{
+    font-weight: 600;
+}
+
+.more-bold-1{
+    font-weight: 400;
+}
+
+/*--------------------
+    Opacity
+---------------------*/
+.opacity-0
+{
+    opacity: 0;
+}
+
+.opacity-5
+{
+    opacity: 0.8;
+}
+
+
+
+/*--------------------
+    Paddings
+---------------------*/
+.padding-1{
+    padding: 0.5em;
+}
+
+/*--------------------
+    Margins
+---------------------*/
+
+.margin-1{
+    margin: 0.5em;
+}
+
+/*-------------------
+        Sizes
+--------------------*/
+.size.small{
+    font-size: 0.875em;
+}
+.size.large{
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.size.big{
+    font-size: 2em;
+    vertical-align: middle;
+}
+.size.huge {
+    font-size: 4em;
+    vertical-align: middle;
+}
+.size.massive{
+    font-size: 8em;
+    vertical-align: middle;
+}
+
+.input-field input[type=text]:valid, .input-field input[type=password]:valid, .input-field input[type=email]:valid, .input-field input[type=date]:valid, .input-field textarea:valid {
+background-color: transparent;
+border: none;
+border-bottom: 1px solid black;
+outline: none;
+height: 3rem;
+width: 100%;
+font-size: 1rem;
+margin: 0 0 15px 0;
+padding: 0;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-o-transition: 0.3s;
+-ms-transition: 0.3s;
+transition: 0.3s;
+}
+.input-field input[type=text]:focus+label, .input-field input[type=password]:focus+label, .input-field input[type=email]:focus+label, .input-field input[type=date]:focus+label, .input-field textarea:focus+label {
+        color: grey;
+    }
+/* Typing Animation*/
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+.typeit{
+    font-size:150%;
+    width:16.3em;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid black;
+
+    -webkit-animation: typing 2s steps(30, end), /* # of steps = # of characters */
+    blink-caret 1s step-end 2s;
+    -moz-animation: typing 2s steps(30, end), /* # of steps = # of characters */
+    blink-caret 1s step-end 2s;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=search]:focus, textarea:focus.materialize-textarea {
+border-bottom: 1px solid #263238 !important;
+-webkit-box-shadow: 0 1px 0 0 #263238 !important;
+-moz-box-shadow: 0 1px 0 0 #263238 !important;
+box-shadow: 0 1px 0 0 #263238 !important;
+}
